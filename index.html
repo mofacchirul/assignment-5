@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+
+<header class="bg-yellow-50 pb-9 sticky top-0 z-10">
+ <nav class="flex justify-between  items-center lg:py-4 lg:px-8 py-2 px-2 ">
+    <div>
+        <button class="btn bg-[#B4F461] font-semibold text-xl">Blog</button>
+    </div>
+    <div class="flex items-center space-x-1" >
+<img src="./assets/logo.png" alt="">
+<h1 class=" lg:text-xl font-semibold">Donate Bangladesh</h1>
+    </div>
+    <div class="flex items-center space-x-1">
+<img src="./assets/coin.png" alt="">
+<a href="" id="balance_frist" class="lg:text-xl font-semibold">5500</a>
+    </div>
+ </nav>
+   
+</header>
+
+<main>
+
+    <!-- section of button -->
+    <section>
+        <div class=" text-center  py-8 space-x-3 ">
+            <button class="btn bg-[#B4F461] text-xl font-semibold">Donation</button>
+            <button class="btn bg-white border-x-2 text-xl font-semibold">History</button>
+        </div>
+    </section>
+
+        <!-- section card -->
+
+
+         <!-- noakhali donate car -->
+            <section class="lg:px-28 px-5  rounded-xl">
+                <div class="hero  bg-slate-50   border-2 ">
+                    <div class="hero-content lg:flex-row flex-col p-5 ">
+                      <img 
+                        src=".//assets/noakhali.png"
+                        class=" rounded-lg  h-96 shadow-2xl" />
+                      <div>
+                        <div class=" ">
+                            <button class="btn btn-sm ">
+                                <img src="./assets/coin.png" alt="">
+                                <h2 id="balance_amount">0 BDT</h2> 
+                            </button>
+                        </div>
+                        <h1 class="text-xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
+                        <p class="py-6">
+                            The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+                        </p>
+                            <form action="">
+                                <input id="noakhali_input" type="number" placeholder="Write Donation Amount " class="input input-bordered w-full " />
+                            </form>
+                            
+                        <div class="form-control mt-6">
+                            <button class="btn bg-[#B4F461] font-semibold text-xl" id="noakhali_donate">Donate Now</button>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+            </section>
+
+
+
+            <!-- feni donate card -->
+                <section class="lg:px-28 px-5 py-10">
+            <div class="hero  bg-slate-50   border-2 rounded-xl ">
+        <div class="hero-content lg:flex-row flex-col p-5 ">
+          <img 
+            src="./assets/feni.png"
+            class=" rounded-lg  h-96 shadow-2xl" />
+          <div>
+            <div class=" ">
+                <button class="btn btn-sm "><img src="./assets/coin.png" alt=""> 600 BDT</button>
+            </div>
+            <h1 class="text-xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
+            <p class="py-6">
+                The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+            </p>
+                <form action="">
+                    <input id="feni_input" type="number" placeholder="Write Donation Amount " class="input input-bordered w-full " />
+                </form>
+                
+            <div class="form-control mt-6">
+                <button class="btn bg-[#B4F461] font-semibold text-xl">Donate Now</button>
+              </div>
+          </div>
+        </div>
+      </div>
+</section>
+        
+
+<!-- aid for injured  -->
+<section class="lg:px-28 px-5  rounded-xl">
+    <div class="hero  bg-slate-50   border-2 ">
+        <div class="hero-content lg:flex-row flex-col p-5 ">
+          <img 
+            src="./assets/quota-protest.png"
+            class="rounded-lg h-96 shadow-2xl" />
+          <div>
+            <div class=" ">
+                <button class="btn btn-sm "><img src="./assets/coin.png" alt=""> 2400 BDT</button>
+            </div>
+            <h1 class="text-xl font-bold">Aid for Injured in the Quota Movement</h1>
+            <p class="py-6">
+                The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+            </p>
+                <form action="">
+                    <input id="aid_input" type="number" placeholder="Write Donation Amount " class="input input-bordered w-full " />
+                </form>
+                
+            <div class="form-control mt-6">
+                <button class="btn bg-[#B4F461] font-semibold text-xl">Donate Now</button>
+              </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+
+</main>
+
+
+    <script src="./js/index.js"></script>
+    <script src="./js/function.js"></script>
+</body>
+</html>
