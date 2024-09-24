@@ -37,12 +37,15 @@ document.getElementById('noakhali_donate').addEventListener('click',function(){
 
 
 
+
+
+
 const donation = document.getElementById("Donation");
 const histors = document.getElementById('History');
 const card = document.getElementById('cards');
-const history_Continar = document.getElementById('history_continar')
+const history_Continar = document.getElementById('history_continar');
 histors.addEventListener("click",function(){
-  histors.classList.add( 'bg-lime-300')
+  histors.classList.add( 'bg-[#B4F461]');
  
  donation.classList.remove(
     'bg-lime-300'
@@ -51,13 +54,24 @@ card.classList.add("hidden")
 history_Continar.classList.remove('hidden')
 
   
-})
+});
+
+
 donation.addEventListener('click',function(){
+  
   donation.classList.add(
     'bg-lime-300'
  )
-card.classList.remove("hidden")
+card.classList.remove("hidden");
 history_Continar.classList.add('hidden');
-})
+
+
+  
+
+});
+
+
+
+
 
 
