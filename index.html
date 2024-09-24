@@ -57,15 +57,28 @@
                     </form>
                     
                 <div class="form-control mt-6">
-                    <button class="btn btn bg-[#B4F461] font-semibold text-xl" id="noakhali_donate" >Donate Now</button>
+                    <button id="noakhali_donate" class="btn btn bg-[#B4F461] font-semibold text-xl" onclick="my_modal_1.showModal()">Donate Now</button>
+<dialog id="my_modal_1" class="modal">
+  <div class="modal-box text-center">
+    <h3 class="text-3xl font-bold">congrates!</h3>
+    <img src="./assets/coin.png" class=" mx-auto mt-2" alt="">
+    <p class="py-4">You Have Donated for humankid</p>
+    <h3 class="text-3xl font-bold">succesful</h3>
 
+    <div class="modal-action">
+      <form method="dialog">
+        
+        <button class="btn">Close Confirmation</button>
+      </form>
+    </div>
+  </div>
+</dialog>
                   </div>
               </div>
             </div>
           </div>
     </section>
 
-<!-- Open the modal using ID.showModal() method -->
 
 
     <!-- feni donate card -->
@@ -92,9 +105,24 @@
         
     <div class="form-control mt-6">
         
-<button id="feni-input" class="btn btn bg-[#B4F461] font-semibold text-xl">Donate Now</button>
 
 
+<button id="feni-input" class="btn btn bg-[#B4F461] font-semibold text-xl" onclick="my_modal_4.showModal()">Donate Now</button>
+<dialog id="my_modal_4" class="modal">
+  <div class="modal-box text-center ">
+    
+    <h3 class="text-3xl font-bold">congrates!</h3>
+    <img src="./assets/coin.png" class=" mx-auto mt-2" alt="">
+    <p class="py-4">You Have Donated for humankid</p>
+    <h3 class="text-3xl font-bold">succesful</h3>
+    <div class="modal-action">
+      <form method="dialog">
+       
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
 
 </div>
    </div>
@@ -129,9 +157,23 @@
     <div class="form-control mt-6">
         
    
-<button id="btn-aid" class="btn btn bg-[#B4F461] font-semibold text-xl">Donate Now</button>
 
 
+<button id="btn-aid" class="btn btn bg-[#B4F461] font-semibold text-xl" onclick="my_modal_5.showModal()">Donate Now</button>
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box text-center">
+    <h3 class="text-3xl font-bold">congrates!</h3>
+    <img src="./assets/coin.png" class=" mx-auto mt-2" alt="">
+    <p class="py-4">You Have Donated for humankid</p>
+    <h3 class="text-3xl font-bold">succesful</h3>
+    <div class="modal-action">
+      <form method="dialog">
+       
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
 
       </div>
   </div>
@@ -149,6 +191,10 @@
 
 
 </main>
+
+
+
+
 
 
 

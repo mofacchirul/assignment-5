@@ -1,6 +1,7 @@
 function value(id){
     const Input = parseFloat(document.getElementById(id).value);
     return Input ;
+    
 }
 
 function innertext(id){
