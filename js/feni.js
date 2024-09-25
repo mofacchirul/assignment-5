@@ -3,7 +3,14 @@
 
 document.getElementById("feni-input").addEventListener('click',function(){
     const feni_input = value('feni_value');
-    
+    if(feni_input <= 0 ){
+      alert("faild to negative add money ")
+      return;
+      
+    }
+    if(feni_input > 0){
+      document.getElementById('my_modal_4').showModal();
+        }
 
     const Balance_amount = innertext('balance_amounts');
    
@@ -21,7 +28,7 @@ document.getElementById("feni-input").addEventListener('click',function(){
     div.classList.add('bg-slate-50','border-2', 'p-4')
     div.innerHTML= `
    <p class="text-xl font-bold ">${feni_input }  Taka is Donated for Flood Relief in Feni,Bangladesh</p>
-   <p>Date :  ${new Date().toLocaleTimeString}  ${new Date().toLocaleDateString()}  GMT +0600 (Bangladesh Standard Time)</p>
+   <p>Date :    ${new Date()}  GMT +0600 (Bangladesh Standard Time)</p>
    `
   
    

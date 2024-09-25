@@ -2,11 +2,16 @@
 
 document.getElementById('noakhali_donate').addEventListener('click',function(){
   const noakhali_amount = value("noakhali_input")
-  if(noakhali_amount <= 0){
+  
+  if(noakhali_amount <= 0 ){
     alert("faild to negative add money ")
     return;
     
   }
+  if(noakhali_amount > 0){
+    document.getElementById('my_modal_1').showModal();
+      }
+ 
   const Balance_amount = innertext('balance_amount');
   const total_amount = Balance_amount + noakhali_amount;
   const frist_Balance = innertext('balance_frist');
@@ -21,7 +26,7 @@ document.getElementById('noakhali_donate').addEventListener('click',function(){
   div.classList.add('bg-slate-50','border-2', 'p-4')
   div.innerHTML= `
  <p class="text-xl font-bold ">${noakhali_amount} Taka is Donate for Flood at Noakhali, Bangladesh</p>
- <p>Date :  ${new Date().toLocaleDateString()}  GMT +0600 (Bangladesh Standard Time)</p>
+ <p>Date :  ${new Date()}  GMT +0600 (Bangladesh Standard Time)</p>
  `
  
 
@@ -38,14 +43,14 @@ document.getElementById('noakhali_donate').addEventListener('click',function(){
 
 
 
-
+// ***************History*********Donation***********
 
 const donation = document.getElementById("Donation");
 const histors = document.getElementById('History');
 const card = document.getElementById('cards');
 const history_Continar = document.getElementById('history_continar');
 histors.addEventListener("click",function(){
-  histors.classList.add( 'bg-[#B4F461]');
+  histors.classList.add('bg-lime-400');
  
  donation.classList.remove(
     'bg-lime-300'
@@ -62,6 +67,7 @@ donation.addEventListener('click',function(){
   donation.classList.add(
     'bg-lime-300'
  )
+ histors.classList.remove('bg-lime-400');
 card.classList.remove("hidden");
 history_Continar.classList.add('hidden');
 

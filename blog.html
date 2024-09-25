@@ -6,6 +6,7 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
     <header class=" sticky top-0 z-10 backdrop-blur-sm bg-white/30">
@@ -30,29 +31,47 @@
        
        </header>
 
-<main>
-    <section class=" space-y-3">
+<main class=" max-w-5xl mx-auto">
+<h1 class=" text-3xl font-bold py-5 pb-5">ImportantFAQ  <i class="fa-solid fa-question text-4xl"></i></h1>
+
+    <section class=" space-y-3 mt-4">
         <!-- messger  -->
 
+       
+         
+         
+          
         <div class="collapse bg-base-200">
             <input type="radio" name="my-accordion-1" checked="checked" />
-            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div class="collapse-title text-xl font-medium">what is the document object model(DOM)?</div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.</p>
             </div>
           </div>
+        
+        
           <div class="collapse bg-base-200">
             <input type="radio" name="my-accordion-1" />
-            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div class="collapse-title text-xl font-medium">how do you select an element from the DOM</div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p>The getElementById() method of the Document interface returns an Element object representing the element whose id property matches the specified string. Since element IDs are required to be unique if specified, they're a useful way to get access to a specific element quickly.</p>
             </div>
           </div>
+         
+         
           <div class="collapse bg-base-200">
             <input type="radio" name="my-accordion-1" />
-            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+            <div class="collapse-title text-xl font-medium">what is event delegation in the context of the DOM</div>
             <div class="collapse-content">
-              <p>hello</p>
+              <p>the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated. This can be done on a particular target element using the . target property of an event object</p>
+            </div>
+          </div>
+
+
+          <div tabindex="0" class="collapse border-base-300 bg-base-200 border">
+            <div class="collapse-title text-xl font-medium">How do you manipulate an elements attributes and styles using the DOM</div>
+            <div class="collapse-content">
+              <p>If you want to change other attributes like id , href , or src , you can use the setAttribute() method. The setAttribute() method accepts two arguments: The name of the attribute to set. The value of the attribute to set.</p>
             </div>
           </div>
 
